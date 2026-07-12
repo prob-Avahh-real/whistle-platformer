@@ -1,0 +1,35 @@
+# 口哨冒险 (Whistle Platformer)
+
+口哨声控横版关卡障碍通关游戏。Web Audio API 音高检测驱动角色动作。
+
+## 目标平台
+
+| 平台 | 方式 | 产出 |
+|------|------|------|
+| 🍎 iOS | Capacitor → Xcode | IPA |
+| 🤖 Android | Capacitor → Gradle | APK |
+| ⌚ 手表 | 窄屏自适应 | 同 APK |
+| 👓 智能眼镜 | 窄FOV+语音 | 同 APK |
+
+## 玩法
+
+- 口哨音高控制动作：低音=走/蹲，中音=跳，高音=冲刺
+- 横版卷轴关卡，躲避障碍通关
+- 多关卡，收集金币
+- 👓 智能眼镜：窄FOV自适应 + 语音命令控制（自动检测屏幕尺寸）
+
+### 语音命令（智能眼镜模式）
+| 命令 | 映射频率 | 动作 |
+|------|----------|------|
+| 跳 / 上 / up | 500Hz (mid) | 跳跃 |
+| 蹲 / 下 / down | 300Hz (low) | 蹲/走 |
+| 冲 / 快 / right | 800Hz (high) | 冲刺 |
+| 停 | 0Hz | 停止 |
+
+## 技术栈
+
+- Web Audio API 音高检测
+- Canvas 2D 横版渲染
+- Capacitor 原生包装
+- Web Speech Recognition API（眼镜语音控制）
+- DeviceOrientation + DeviceMotion（智能戒指/手杖）

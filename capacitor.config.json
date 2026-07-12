@@ -1,0 +1,1 @@
+{"appId":"com.whistle.platformer","appName":"口哨冒险","webDir":"www","ios":{"contentInset":"automatic"},"android":{"allowMixedContent":true},"plugins":{"StatusBar":{"style":"DARK","backgroundColor":"#0a1a2a"}}}
